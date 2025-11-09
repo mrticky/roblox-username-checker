@@ -1,23 +1,76 @@
-# roblox-username-checker
-Fast, async Roblox username checker — built with Python + httpx + asyncio. Features adaptive rate limiting, auto-retry, CSRF handling, and instant browser/beep alerts when an available username is found. 🚀
+⚙️ Roblox Username Checker
 
-#How To Run
-To run the the roblox username checker please download the following pip requirements
-open the file directory with the "requirements.txt" file inside open a command prompt 
-and enter "pip install -r requirements.txt
+Fast, async Roblox username checker — built with Python + httpx + asyncio.
+Features adaptive rate limiting, auto-retry, CSRF handling, and instant browser/beep alerts when an available username is found. 🚀
 
-#More Infomation
-This was a Quick script I made with the power of AI some features may not working but
-everything should Work inside the script.
+🧩 Requirements
 
-#Features
-Once you have ran the script it will load all the usernames in the usernames.txt file
-(please make sure the usernames are in
+Install dependencies:
 
-<img width="157" height="77" alt="{4CB77547-8553-418E-94E3-02F2F050DB24}" src="https://github.com/user-attachments/assets/bfd864af-23e4-4007-9e06-45cdd98e4d02" />
+pip install -r requirements.txt
 
 
-format) once the checker finds a username it automatically beeps 3 times and opens roblox.com website for you to go ahead
-and signup with that username.
+Your requirements.txt should contain:
 
-Thank you.
+httpx>=0.24.0
+
+▶️ How to Run
+
+Place your list of usernames in a file named usernames.txt, for example:
+
+name1
+name2
+name3
+
+
+Open a terminal in the project folder and run:
+
+python main.py
+
+
+The script will:
+
+Load all usernames from usernames.txt
+
+Check them using Roblox’s username validation API
+
+Stop automatically when it finds one that’s available
+
+When a username is found, it will:
+
+Beep 3 times 🔔
+
+Open the Roblox website automatically 🌐
+
+🧠 How It Works
+
+Uses Roblox’s public endpoint:
+
+https://auth.roblox.com/v1/usernames/validate
+
+
+Async requests handled by httpx.AsyncClient
+
+Smart adaptive rate limiting:
+
+Slows down on 429 Too Many Requests
+
+Speeds up when responses are stable
+
+Automatically retries on network errors or token issues
+
+Logs all responses to responses.log
+
+🗂️ Output Files
+File	Description
+taken.txt	Usernames that are unavailable
+available.txt	First available username found
+responses.log	Full API responses and logs
+🧾 Notes
+
+This was a quick script built with AI assistance.
+All main features should work as intended — but feel free to improve or fork it. 💡
+
+💬 Author
+
+Created with ❤️ using Python and curiosity.
