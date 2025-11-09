@@ -14,9 +14,8 @@ everything should Work inside the script.
 Once you have ran the script it will load all the usernames in the usernames.txt file
 (please make sure the usernames are in
 
-name
-name
-name
+<img width="157" height="77" alt="{4CB77547-8553-418E-94E3-02F2F050DB24}" src="https://github.com/user-attachments/assets/bfd864af-23e4-4007-9e06-45cdd98e4d02" />
+
 
 format) once the checker finds a username it automatically beeps 3 times and opens roblox.com website for you to go ahead
 and signup with that username.
