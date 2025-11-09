@@ -20,4 +20,4 @@ Once you have ran the script it will load all the usernames in the usernames.txt
 format) once the checker finds a username it automatically beeps 3 times and opens roblox.com website for you to go ahead
 and signup with that username.
 
-#Thank you
+Thank you.
