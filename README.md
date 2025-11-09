@@ -1,15 +1,21 @@
-⚙️ Roblox Username Checker
+<p align="center">
+  <img src="https://dummyimage.com/1200x200/0d0d0d/ffffff&text=⚙️+Roblox+Username+Checker" alt="Roblox Username Checker Banner">
+</p>
 
-Fast, async Roblox username checker — built with Python + httpx + asyncio.
-Features adaptive rate limiting, auto-retry, CSRF handling, and instant browser/beep alerts when an available username is found. 🚀
+---
 
-🧩 Requirements
+# ⚙️ Roblox Username Checker
+
+Fast, async Roblox username checker — built with **Python + httpx + asyncio**.  
+Features **adaptive rate limiting**, **auto-retry**, **CSRF handling**, and **instant browser/beep alerts** when an available username is found. 🚀
+
+---
+
+## 🧩 Requirements
 
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
-
 Your requirements.txt should contain:
 
 httpx>=0.24.0
@@ -38,9 +44,9 @@ Stop automatically when it finds one that’s available
 
 When a username is found, it will:
 
-Beep 3 times 🔔
+🔔 Beep 3 times
 
-Open the Roblox website automatically 🌐
+🌐 Open the Roblox website automatically
 
 🧠 How It Works
 
